@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  background-color: var(--mainColor);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --mainColor: #010165;
+  --secondaryColor: #00ffff;
+  --thirdColor: white;
+  --buttonColor: #eb6536;
+}
+
+.header {
+  background-color: var(--secondaryColor);
+  text-align: center;
+}
+
+.title-row {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.instructions-title {
+  font-size: 3rem;
+  color: var(--secondaryColor);
+}
+
+.container {
+  margin: 0 auto;
+  width: 600px;
+}
+
+span {
+  color: var(--thirdColor);
+  font-size: 1.25rem;
+}
+
+h2 {
+  color: var(--secondaryColor);
+  font-size: 2rem;
+}
+
+.door-row {
+  text-align: center;
+}
+
+.door-frame {
+  cursor: pointer;
+  padding: 1em;
+}
+
+.start-row {
+  margin: auto;
+  text-align: center;
+  padding-top: 2em;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+}
+
+
+.scoreboard {
+  width: 14em;
+  margin: auto;
+  border: 1px solid white;
+  margin-bottom: 2em;
+}
+
+.scoreboard h2 {
+  border-bottom: 1px solid white;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.scoreboard table {
+  margin: 10px auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scoreboard th,
+.scoreboard td {
+  text-align: center;
+  color: var(--thirdColor);
+}
+
+.scoreboard td {
+  font-size: 3em;
+  padding: 0 20px;
+}
+
+footer p {
+  color: var(--thirdColor);
+  margin-top: 1.5rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+  color: var(--thirdColor);
+}
+
+.footer-text a {
+  color: var(--thirdColor);
+}
