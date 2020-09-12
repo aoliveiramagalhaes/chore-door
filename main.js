@@ -22,13 +22,6 @@ const lossesDisplay = document.getElementById('losses');
 const isBot = (door) => door.src === botDoorPath;
 
 const isClicked = (door) => {
-  // src = 1
-  // closedDoorPath = 1
-  // = false
-
-  // src = 1
-  // closedDoorPath = 2
-  // = true
 
   if (door.src === closedDoorPath) {
     return false;

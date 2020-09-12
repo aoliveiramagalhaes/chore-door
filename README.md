@@ -1,10 +1,10 @@
 ## Chore Door
 
-My mission was to construct a single-page website that plays a fully-functional game.
+Chore Door is a single-page website that plays a fully-functional game.
 
-Follow the link below to see what your game will look like by the end of this project. Play a few rounds and see how you fare against the ChoreBot:
+Click on the link below to play a few rounds and see how you fare against the ChoreBot:
 
-[Chore Door](https://s3.amazonaws.com/codecademy-content/projects/chore-door/chore-door-final/index.html)
+[Chore Door](https://aoliveiramagalhaes.github.io/chore-door)
 
 ### Rules
 
