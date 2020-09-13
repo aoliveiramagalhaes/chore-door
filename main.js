@@ -1,9 +1,9 @@
-const doorImage1 = document.getElementById('door1');
-const doorImage2 = document.getElementById('door2');
-const doorImage3 = document.getElementById('door3');
-const botDoorPath = './images/robot.svg';
-const beachDoorPath = './images/beach.svg';
-const spaceDoorPath = './images/space.svg';
+const doorImage1 = document.getElementById("door1");
+const doorImage2 = document.getElementById("door2");
+const doorImage3 = document.getElementById("door3");
+const botDoorPath = "./images/robot.svg";
+const beachDoorPath = "./images/beach.svg";
+const spaceDoorPath = "./images/space.svg";
 let numClosedDoors = 3;
 let openDoor1;
 let openDoor2;
@@ -13,16 +13,16 @@ let losses = 0;
 
 let currentlyPlaying = true;
 
-const closedDoorPath = './images/closed_door.svg';
+const closedDoorPath = "./images/closed_door.svg";
 
-const startButton = document.getElementById('start');
-const winsDisplay = document.getElementById('wins');
-const lossesDisplay = document.getElementById('losses');
+const startButton = document.getElementById("start");
+const winsDisplay = document.getElementById("wins");
+const lossesDisplay = document.getElementById("losses");
 
-const isBot = (door) => door.src.endsWith('robot.svg');
+const isBot = (door) => door.src.endsWith("robot.svg");
 
 const isClicked = (door) => {
-  if (door.src.endsWith('closed_door.svg')) {
+  if (door.src.endsWith("closed_door.svg")) {
     return false;
   } else {
     return true;
@@ -33,7 +33,7 @@ const playDoor = (door) => {
   numClosedDoors--;
 
   if (numClosedDoors === 0) {
-    gameOver('win');
+    gameOver("win");
   } else if (isBot(door)) {
     gameOver();
   }
@@ -55,7 +55,7 @@ const randomChoreDoorGenerator = () => {
     openDoor2 = botDoorPath;
     openDoor3 = beachDoorPath;
   }
-}
+};
 
 doorImage1.onclick = () => {
   if (currentlyPlaying && !isClicked(doorImage1)) {
@@ -90,16 +90,16 @@ const startRound = () => {
   doorImage3.src = closedDoorPath;
   numClosedDoors = 3;
   currentlyPlaying = true;
-  startButton.innerHTML = 'Good luck!';
+  startButton.innerHTML = "Good luck!";
   randomChoreDoorGenerator();
 };
 
 const gameOver = (status) => {
-  if (status === 'win') {
-    startButton.innerHTML = 'You win! Play again?';
+  if (status === "win") {
+    startButton.innerHTML = "You win! Play again?";
     winsDisplay.innerHTML = ++wins;
   } else {
-    startButton.innerHTML = 'Game over! Play again?';
+    startButton.innerHTML = "Game over! Play again?";
     lossesDisplay.innerHTML = ++losses;
   }
   currentlyPlaying = false;
@@ -107,5 +107,13 @@ const gameOver = (status) => {
 
 startRound();
 
+const isHTTPS = () => window.location.protocol === "https:";
 
-
+if (isHTTPS() && "serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker
+      .register("./service-worker.js")
+      .then((_res) => console.log("service worker registered"))
+      .catch((err) => console.error("service worker not registered", err));
+  });
+}

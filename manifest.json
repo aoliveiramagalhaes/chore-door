@@ -4,21 +4,23 @@
   "name": "Chore Door!",
   "short_name": "Chore Door!",
   "scope": "/chore-door/",
-  "display": "browser",
-  "start_url": "https://aoliveiramagalhaes.github.io/chore-door/",
+  "display": "standalone",
+  "start_url": "/chore-door/",
   "background_color": "transparent",
   "theme_color": "transparent",
   "description": "Aline Oliveira Magalhaes | Front End Developer",
   "orientation": "any",
-  "related_applications": [],
-  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "./images/bot-icon.png",
+      "src": "./images/bot-icon-32x32.png",
       "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/bot-icon-144x144.png",
+      "sizes": "144x144",
       "type": "image/png"
     }
   ],
-  "url": "https://aoliveiramagalhaes.github.io/chore-door/",
-  "screenshots": []
+  "url": "https://aoliveiramagalhaes.github.io/chore-door/"
 }
