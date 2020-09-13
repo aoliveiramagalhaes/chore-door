@@ -95,7 +95,7 @@ h2 {
   padding: 0 20px;
 }
 
-footer p {
+.footer-text {
   color: var(--thirdColor);
   margin-top: 1.5rem;
   font-weight: 200;
@@ -127,7 +127,7 @@ footer p {
   }
 
   .door-frame {
-    width: 25%;
+    width: 30%;
     height: auto;
   }
 
@@ -143,15 +143,21 @@ footer p {
   }
 
   .scoreboard {
-    width: 50%;
+    width: 40%;
+    height: auto;
   }
 
   .scoreboard h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
-  .footer p {
-    font-size: 1em;
+  #wins,
+  #losses {
+    font-size: 2.5rem;
+  }
+
+  .footer-text {
+    font-size: 0.75rem;
   }
 
 }
