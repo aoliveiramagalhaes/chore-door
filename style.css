@@ -64,7 +64,6 @@ h2 {
   cursor: pointer;
 }
 
-
 .scoreboard {
   width: 14em;
   margin: auto;
@@ -110,4 +109,65 @@ footer p {
 
 .footer-text a {
   color: var(--thirdColor);
+}
+
+
+@media only screen and (max-width: 420px) {
+  .title-row {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .instructions-title {
+    font-size: 2rem;
+  }
+
+  .header {
+    margin: auto;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .row h2,
+  span {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: 1em;
+  }
+
+}
+
+@media only screen and (max-width: 540px) {
+  .title-row {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .instructions-title {
+    font-size: 2rem;
+  }
+
+  .header {
+    margin: auto;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .row h2,
+  span {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: 1em;
+  }
+
 }
