@@ -164,4 +164,8 @@ h2 {
     font-size: 0.75rem;
   }
 
+  .footer-text a {
+    text-decoration: underline;
+  }
+
 }
