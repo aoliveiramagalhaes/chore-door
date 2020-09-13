@@ -1,0 +1,18 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Chore Door!",
+  "short_name": "Chore Door!",
+  "scope": "/chore-door/",
+  "display": "browser",
+  "start_url": "https://aoliveiramagalhaes.github.io/chore-door/",
+  "background_color": "transparent",
+  "theme_color": "transparent",
+  "description": "Aline Oliveira Magalhaes | Front End Developer",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [],
+  "url": "https://aoliveiramagalhaes.github.io/chore-door/",
+  "screenshots": []
+}
