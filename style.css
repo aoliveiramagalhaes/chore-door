@@ -142,6 +142,10 @@ h2 {
     text-align: center;
   }
 
+  .scoreboard table {
+    width: 0%;
+  }
+
   .scoreboard {
     width: 40%;
     height: auto;
