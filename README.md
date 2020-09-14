@@ -21,12 +21,15 @@ Click on the link below to play a few rounds and see how you fare against the Ch
  #### CSS framework
  * Bootstrap 4.5
 
+ #### PWA
+ Chore Door supports PWA, so I built my PWA to bring an awesome "install" experience to users. With only one click they can install my *Progressive Web App* directly from the browser.
+
  #### Images
 ![game screenshot](./images/main-game.png)
 
-![round 1](./images/round1.png)
+![round 1](./images/round-1.png)
 
-![round 2](./images/round2.png)
+![round 2](./images/round-2.png)
 
 
 
